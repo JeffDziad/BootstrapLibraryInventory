@@ -1,0 +1,17 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+* {
+  font-family: 'Rubik', sans-serif;
+}
+
+$theme-colors: (
+  "primary": #000,
+  "secondary": #327cc2
+);
+
+$navbar-dark-color: $black;
+$navbar-dark-brand-color: #fff;
+
+@import "../node_modules/bootstrap/scss/bootstrap";

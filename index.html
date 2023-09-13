@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library Inventory</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="scss/custom.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-black">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand" href="index.html">
+                <h1>Library Inventory</h1>
+            </a>
+        </div>
+    </nav>
+    <div class="container p-5">
+        <div class="row row-cols-3">
+            <div class="col-6 d-flex align-items-end">
+                <div class="input-group mb-2 p-2">
+                    <input type="text" class="form-control placeholder-glow" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+
+            </div>
+            <div class="col-6">
+                <div class="accordion mb-2" id="listSortFilterAccordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" style="font-size: 20px;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <i class="fa-solid fa-filter"></i>&nbsp;Sort/Filter
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#listSortFilterAccordion">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-2">
+                        <img class="rounded-1 img-fluid" alt="Death By Black Hole" src="https://aalbc.com/bookcovers/9780393330168.jpg">
+                    </div>
+                    <div class="p-3 col-8">
+                        <h2>Death By Black Hole</h2>
+                        <span class="small text-decoration-underline">Author</span>
+                        <h5>Neil DeGrasse Tyson</h5>
+                        <span class="small text-decoration-underline">ISBN</span>
+                        <h5>978-0-393-35038-8</h5>
+                    </div>
+                    <div class="p-3 col-2">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<script src="https://kit.fontawesome.com/3155597822.js" crossorigin="anonymous"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
