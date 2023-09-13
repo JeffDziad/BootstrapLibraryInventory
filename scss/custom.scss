@@ -1,14 +1,61 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 
+$newPrimary: #327cc3;
+$newDanger: #ff0000;
 
 * {
   font-family: 'Rubik', sans-serif;
 }
 
+.col {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.list-card {
+  overflow: hidden;
+  border-radius: 15px;
+  border: solid 1px black;
+}
+
+.list-item {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.list-item:active {
+  background: rgba(255, 0, 0, 0.3) !important;
+}
+.list-item:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+.list-item-options {
+  font-size: 35px;
+}
+
+.option-primary:hover {
+  background: rgba($black, 0.25) !important;
+}
+
+.option-danger:hover {
+  background: rgba($newDanger, 0.25) !important;
+}
+
+.detail-label {
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.detail-body {
+  font-size: 25px;
+}
+
 $theme-colors: (
   "primary": #000,
-  "secondary": #327cc2
+  "secondary": $newPrimary,
+  "danger": $newDanger,
+  "success": #009500,
 );
 
 $navbar-dark-color: $black;
